@@ -1,0 +1,64 @@
+
+* {
+    font-family: 'Droid Sans', arial, serif;
+    border: 2px red solid;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+nav {
+    margin-left: auto;
+    justify-content: space-evenly;
+    align-items: baseline;
+    text-align: center;
+    padding: 25px;
+
+}
+
+.header-logo {
+font-style: italic;
+font-weight: bold;
+font-size: 24px;
+margin-top: 33px;
+}
+
+header {
+    padding: 0px 20px 10px 20px;
+    text-align: center;
+    background: #1F2937;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    margin-top: -10px;
+}
+
+a {
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+}
+
+.intro {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    background: #1F2937;
+}
+
+.imagediv {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+#introimage {
+    width: 400px;
+    padding: 20px;
+    height: auto;
+    border-radius: 50px;
+
+}
