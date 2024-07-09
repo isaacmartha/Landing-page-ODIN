@@ -1,7 +1,9 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+
 * {
-    font-family: 'Droid Sans', arial, serif;
-    border: 2px red solid;
+    font-family: 'Droid Sans', Arial, serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -10,55 +12,273 @@ body {
     margin: 0;
 }
 
-nav {
-    margin-left: auto;
-    justify-content: space-evenly;
-    align-items: baseline;
-    text-align: center;
-    padding: 25px;
-
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #1F2937;
+    color: white;
 }
 
 .header-logo {
-font-style: italic;
-font-weight: bold;
-font-size: 24px;
-margin-top: 33px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 24px;
 }
 
-header {
-    padding: 0px 20px 10px 20px;
-    text-align: center;
-    background: #1F2937;
-    color: white;
-    font-size: 30px;
-    display: flex;
-    margin-top: -10px;
-}
-
-a {
+nav a {
+    margin: 0 10px;
     font-size: 17px;
     text-decoration: none;
     color: white;
 }
 
 .intro {
-    color: white;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
     background: #1F2937;
+    color: white;
 }
 
-.imagediv {
-    display: flex;
-    justify-content: flex-end;
+.textleft {
+    max-width: 50%;
+    margin-left: 100px;
 }
-
 
 #introimage {
     width: 400px;
-    padding: 20px;
     height: auto;
     border-radius: 50px;
+    margin-right: 100px;
+    border: #ffffff 5px solid;
+}
+
+.information {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.gallery-item {
+    margin: 10px; 
+    width: 300px; 
+    box-sizing: border-box; 
+}
+
+.gallery-item img {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+.imgdesc {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.quote {
+    padding: 20px;
+    text-align: center;
+}
+
+.call-to-action {
+    padding: 20px;
+    text-align: center;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #1F2937;
+    color: white;
+}
+
+#introtitle {
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #F9FAF8;
+}
+
+#introtext {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+#introbutton {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #405cf5;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 15%;
+}
+
+#introbutton:disabled {
+  cursor: default;
+}
+
+#introbutton:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+
+blockquote.q-card-color-1{
+  --accent-color: rgb(32 32 54);
+  --bg-color: rgb(30 145 254);
+  --dot-color: rgb(255 255 255 / .35);
+  --text-color: rgb(243 243 243);
+  --text-color-author: rgb(243 243 243);
+}
+
+blockquote.q-card-color-2{
+  --accent-color: rgb(243 243 243);
+  --bg-color: rgb(33 29 30);
+  --dot-color: rgb(255 255 255 / .125);
+  --text-color: rgb(243 243 243);
+  --text-color-author: rgb(33 29 30);
+}
+
+blockquote.q-card-color-3{
+  --accent-color: rgb(30 145 254);
+  --bg-color: rgb(32 32 54);
+  --dot-color: rgb(255 255 255 / .125);
+  --text-color: rgb(243 243 243);
+  --text-color-author: rgb(243 243 243);
+}
+
+/* QUOTE STYLE */
+
+.quote {
+    background-color: rgba(192, 192, 192, 0.363);
+    padding: 50px;
+}
+
+blockquote.q-card{
+  --padding: 1rem;
+  padding: var(--padding);
+  color: var(--text-color, black);
+  font-weight: 600;
+  background-color: var(--bg-color, white);
+  display: grid;
+  gap: 1rem;
+  background-image: radial-gradient( circle, var(--dot-color, rgb(0 0 0 / .125)) calc(25% - 1px), transparent 25% );
+  background-size: 0.5rem 0.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0.5rem 0.5rem 2rem rgb(0 0 0 / .5)
+  
+}
+blockquote.q-card::before{
+  --qHeight: 4rem;
+  content: "";
+  margin-left: calc(var(--padding) * -1);
+  margin-top: calc(var(--padding) * -1);
+  height: var(--qHeight);
+  width: calc(var(--qHeight) * 1.1);
+  background-image:
+    radial-gradient(
+      circle at bottom right,
+      transparent calc(var(--qHeight) / 4 - 1px),
+      var(--accent-color, black) calc(var(--qHeight) / 4) calc(var(--qHeight) / 2), 
+      transparent calc(var(--qHeight) / 2 + 1px)
+    ),
+    linear-gradient(var(--accent-color, black), var(--accent-color, black));
+  background-size: calc(var(--qHeight) / 2) calc(var(--qHeight) / 2);
+  background-position: top left, bottom left;
+  background-repeat: space no-repeat
+}
+
+blockquote.q-card > .author{
+  color: var(--text-color-author, white);
+  background-color: var(--accent-color, black);
+  justify-self: end;
+  font-size: 0.75em;  
+  padding: 0.5em 1em;
+  border-radius: 0.25rem;
+}
+blockquote.q-card > .author::before{
+  content: "- "
+}
+
+
+/* CTA STYLE */
+
+
+.call-to-action {
+    background-color: #3882f6;
+    padding: 30px;
+    margin: 70px;
+    border-radius: 50px;
+
+}
+
+.ctatitle {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 600;
+}
+.ctatext {
+    color: white;
+}
+
+.ctabutton {
+    appearance: button;
+    backface-visibility: hidden;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #3a3a3a;
+    cursor: pointer;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+    font-size: 100%;
+    height: 44px;
+    line-height: 1.15;
+    margin: 12px 0 0;
+    outline: none;
+    overflow: hidden;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all .2s,box-shadow .08s ease-in;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 15%;
 
 }
